@@ -1,6 +1,23 @@
-# import random and math 
+import math 
+import random 
+class Player:
+    def __init__(self, letter):
+        # letter is x or o
+        self.letter = letter
+    
+    def get_move(self, game):
+        pass
 
-# create a generic class Called as player
+class HumanPlayer(Player):
+    def __init__(self, letter):
+        super().__init__(letter)
+    
+    def get_move(self, game):
+        pass 
 
-# create human player ineriting from the player ckass
-# create a ai player inheriting from the player class
+class RandomComputerPlayer(Player):
+    def __init__(self, letter):
+        super().__init__(letter)
+    
+    def get_move(self, game):
+        pass 
